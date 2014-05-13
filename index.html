@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="ja">
+	<head>
+		<title>割り勘君</title>
+		<meta charset="utf-8">
+
+		<link rel="stylesheet" type="text/css" href="css/app.css">
+		<link rel="stylesheet" type="text/css" href="css/calc.css">
+	</head>
+	<body>
+		<div id="error" class="hidden">
+				<h2>次の点を確認してください</h2>
+				<ul>
+					<li>入力したのは自然数ですか？文字列を入力していませんか？</li>
+					<li>演算子を正しく選んでいますか？</li>
+					<li>わっしょい？</li>
+				</ul>
+			</div>
+
+		支払総額=<input type="text" size="18" id="X">円
+		<br><br>
+		男性<input type="text" size="8" id="a">人
+		女性<input type="text" size="8" id="b">人
+		<br><br>
+		比率　男性:女性=<select id="operator">
+		<option>5:5</option>
+		<option>6:4</option>
+		<option>7:3</option>
+		</select>
+
+		<br><br>
+		<button type="button" id="calcButton" onclick="startCalc();">計算</button>
+		<br><br>
+		男<input type="text" size="8" id="A">円
+		女<input type="text" size="8" id="B">円
+
+		<script src="app.js"></script>
+
+	</body>
+</html>
